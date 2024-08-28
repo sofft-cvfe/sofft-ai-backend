@@ -15,7 +15,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: 'https://sofft-cvfe.github.io/sofft-ai-frontend/',
+  origin: 'https://sofft-cvfe.github.io',
 }
 
 app.use(cors(corsOptions));
