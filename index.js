@@ -33,7 +33,6 @@ app.post('/ask', async (req, res) => {
         const stream = await client.chat.completions.create({
             model: "gpt-3.5-turbo-0125",
             messages: [{ role: 'user', content: question }] ,
-            max_tokens: 150,
             stream: true,
         });
 
